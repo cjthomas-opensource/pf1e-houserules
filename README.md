@@ -10,8 +10,11 @@ information for Harbourton is also provided.
 ## Folders
 
 `documents` - PDF versions of the various documents and guides.
+
 `houserules` - LaTeX source for the house rules document.
+
 `harbourton` - LaTeX source for the Harbourton setting guide.
+
 `tips` - LaTeX source for the tips/helpfile documents.
 
 _(This is the end of the file.)_
