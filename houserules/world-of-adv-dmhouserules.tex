@@ -1,0 +1,118 @@
+% "World of Adventure" campaign guide - Top level
+% Written by Christopher Thomas.
+
+\documentclass[letterpaper,11pt]{report}
+\usepackage[letterpaper]{geometry}
+\usepackage{graphicx}
+\usepackage{float} % Needed for capital H option.
+\usepackage{verbatim}
+
+\geometry{nohead,footskip=0.3in,margin=0.75in}
+
+% Force my paragraph style, darnit.
+\usepackage{indentfirst}
+\setlength{\parskip}{\baselineskip}
+
+% Custom macros.
+\newcommand{\fixme}[1]{\textbf{FIXME: #1}}
+
+% "Player guide" vs "DM notes" switch.
+\newif\ifdmstuff
+\dmstufftrue
+\ifdefined\isplayerguide
+\dmstufffalse
+\fi
+
+%
+% Document body.
+\begin{document}
+
+% Title page.
+
+\pagestyle{empty}
+
+\begin{center}
+%
+%\vspace*{1in}
+\vspace*{2in}
+% Switch title depending on which document we're rendering.
+\ifdmstuff
+{\Huge \bfseries World of Adventure \\
+\vspace{\baselineskip} House Rules Guide -- DM Version} \\
+\else
+{\Huge \bfseries World of Adventure \\
+\vspace{\baselineskip} House Rules Guide} \\
+\fi
+\vspace{1.5\baselineskip}
+{\footnotesize Written by Christopher Thomas -- \today.} \\
+%
+\iffalse
+\vspace*{1.5in}
+\includegraphics[width=\columnwidth]{photos/title-pic.jpg}
+\fi
+%
+\iffalse
+\vfill
+{\scriptsize
+Copyright (c) {\the\year} by Christopher Thomas. This work is licensed under
+the Creative Commons Attribution-NonCommercial 4.0 International License.}
+\fi
+%
+\end{center}
+%
+\clearpage
+%
+\pagestyle{plain}
+\pagenumbering{roman}
+\setcounter{page}{1}
+%
+% FIXME - Add an acknowledgements page here. Move the Tony blurb here from
+% intro.
+%
+\tableofcontents
+%
+\clearpage
+\pagestyle{plain}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+% NOTE - "\thispagestyle" is used for part and chapter beginning pages,
+% and overrides \pagestyle. Redefine it to be harmless.
+\renewcommand{\thispagestyle}[1]{}
+
+\input{world-of-adv-over}
+% FIXME - Stopped here.
+\iffalse
+%
+\input{world-of-adv-indus}
+\input{world-of-adv-magic}
+
+\part{Modified Rules}
+
+\input{world-of-adv-rules}
+\input{world-of-adv-pcnotes}
+
+\clearpage
+\fixme{More sections go here.}
+
+\ifdmstuff
+
+% FIXME - Not a "part" any more. Make well-organized chapters.
+
+\input{world-of-adv-dmnotes}
+
+\input{world-of-adv-hooks}
+
+\clearpage
+\fixme{More sections go here.}
+\fi
+%
+\fi
+
+\appendix
+
+% Any appendices we add go here.
+
+\end{document}
+
+%
+% This is the end of the file.
