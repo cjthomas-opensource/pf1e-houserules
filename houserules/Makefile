@@ -8,6 +8,7 @@ DMNAME=$(BASENAME)-dmhouserules
 
 DOCBITS=\
 	$(BASENAME)-over.tex		\
+	$(BASENAME)-chargen.tex		\
 	$(GUIDENAME).tex		\
 	$(DMNAME).tex
 
