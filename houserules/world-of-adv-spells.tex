@@ -19,9 +19,87 @@ flying creature, for 1~hour/level.
 %
 
 %
+\subsection{Calm Animals}
+
+Calm Animals works on anything with the ``animal'' or ``magical beast''
+type that does not have full sapience (i.e. Int less than 3). Be advised
+that most things with Int~0 are immune to mind-affecting spells due to
+being mindless (they're mostly vermin or oozes or the like, not animals).
+The DM can adjudicate special cases (things that are animal-like but don't
+have ``animal'' or ``magical beast'' type might still be affected).
+%
+
+%
+\subsection{Calm Emotions}
+
+This spell is also available as a Wizard~2 spell.
+
+There is a version that's SL3 that lasts 1 minute per level and does not
+require concentration.
+
+There is a SL~4 version lasting 1 round per level and a SL~5 version
+lasting 1 minute per level that give targets a -5 penalty to the saves to
+resist the spell.
+%
+
+%
+\subsection{Charm Animal}
+
+Charm Animal works on anything with the ``animal'' or ``magical beast''
+type that does not have full sapience (i.e. Int less than 3). Be advised
+that most things with Int~0 are immune to mind-affecting spells due to
+being mindless (they're mostly vermin or oozes or the like, not animals).
+The DM can adjudicate special cases (things that are animal-like but don't
+have ``animal'' or ``magical beast'' type might still be affected).
+
+Rather than making the caster a ``trusted friend'', this spell improves
+the target's attitude towards the caster by 2 steps. That's still probably
+good enough, especially if you try using Handle Animal to improve it
+further immediately afterward.
+
+There is a version that's SL3 that gives the recipient a -5 penalty to
+their Will save to resist the spell.
+%
+
+%
+\subsection{Charm Monster}
+
+This spell does not exist. Use Charm Animal for non-sapient targets and
+Charm Person for sapient targets.
+%
+
+%
+\subsection{Charm Person}
+
+Charm Person works on anything sapient (from a human to a unicorn to a
+dragon). The target \textit{does not} need to understand your language
+to be affected. Bear in mind that powerful creatures typically have very
+good Will saves.
+
+Rather than making the caster a ``trusted friend'', this spell improves
+the target's attitude towards the caster by 2 steps. That's still probably
+good enough, especially if you try using Diplomacy to improve it further
+immediately afterward.
+
+There is a version that's SL3 that gives the recipient a -5 penalty to
+their Will save to resist the spell.
+%
+
+%
 \subsection{Clairvoyance}
 
 See notes at ``Scrying''.
+%
+
+%
+\subsection{Command}
+
+Command works on anything that can understand you. This usually means
+human-level intelligence, but Speak with Animals can circumvent that that.
+
+The command is limited to one simple action, not one word. Typical
+examples might be ``drop your weapons'', ``get out'', ``go away'',
+``lie down'', and so forth.
 %
 
 %
@@ -59,6 +137,40 @@ Superseded by ``Know Alignment''.
 %
 
 %
+\subsection{Dominate Animal}
+
+Dominate Animal works on anything with the ``animal'' or ``magical beast''
+type that does not have full sapience (i.e. Int less than 3). Be advised
+that most things with Int~0 are immune to mind-affecting spells due to
+being mindless (they're mostly vermin or oozes or the like, not animals).
+The DM can adjudicate special cases (things that are animal-like but don't
+have ``animal'' or ``magical beast'' type might still be affected).
+
+This spell lasts 1 minute per caster level, and the target gets a new
+saving throw each minute.
+
+There is a Wizard~3 version of this spell.
+
+There is a version that's SL5 that lasts 1 day per caster level, with a new
+saving throw each day. It also gives the recipient a -5 penalty on the Will
+save to resist the spell.
+%
+
+%
+\subsection{Dominate Person}
+
+Dominate Person works on anything sapient (from a human to a unicorn to a
+dragon). Bear in mind that powerful creatures typically have very good Will
+saves.
+
+This spell lasts 1 day per caster level, and the target gets a new saving
+throw each day.
+
+There is a version that's SL7 that gives the recipient a -5 penalty on the
+Will save to resist the spell.
+%
+
+%
 \subsection{Endure Elements}
 
 The ``Mass'' version of this spell is SL2, rather than the usual SL3.
@@ -74,6 +186,58 @@ modes (equal to each mode's base speed).
 
 This is slightly less useful than Haste (which is also SL3), but lasts
 longer.
+%
+
+%
+\subsection{Geas}
+
+Geas works on anything sapient (from a human to a unicorn to a dragon).
+The target must be able to understand you to be affected. Bear in mind that
+powerful creatures typically have very good Will saves.
+
+These spells give an instruction to do or refrain from doing some general
+task or activity. There is an implicit ``to the extent that you are able''
+added to instructions (pausing to eat and sleep are okay), and there is an
+implicit ``to the extent that you can without it being suicide'' as well.
+One or both of these is often made explicit (e.g. ``from sunrise to sunset,
+six days out of seven, you will labour towards X'').
+
+On breaking the direction, the subject is immediately Sickened and gets a
+penalty to all ability scores (without delay). The penalty gets worse (by
+the spell's penalty increment) every 24 hours, up to the spell's penalty
+limit. This cannot reduce an ability score below 3. When the spell's
+duration expires, or when the subject sincerely attempts to abide by its
+terms again, symptoms reduce in severity every 24 hours (with the Sickened
+condition disappearing when the last of the ability penalties do).
+
+Instructions that are prohibitions (such as ``don't kill anyone'') usually
+include terms of restitution, so killing someone in anger and then resolving
+not to do it again isn't enough to remove the penalty -- the recipient has
+to sincerely intend to make restitution (or to accept a pre-specified
+alternate punishment) as well.
+
+Lesser Geas is Bard~3, Cleric~4, Wizard~4.
+Greater Geas is Bard~5, Cleric~6, Wizard~6.
+
+Both spells have a casting time of 1 minute (long enough to spell out the
+task or prohibition). Both spells allow a Will save; for Greater Geas, the
+save has a -5 penalty. There is no hit dice limit; if an ancient dragon
+fails its saving throw (and fails to kill you while you're casting the
+spell), it's affected.
+
+Lesser Geas lasts 2 days per caster level, and applies an ability score
+penalty of -2 to 24 hours, to a limit of -8.
+
+Greater Geas lasts 2 weeks per caster level, and applies an ability score
+penalty of -3 per 24 hours, to a limit of -12.
+%
+
+%
+\subsection{Hide from Animals}
+
+Hide from Animals works on anything with animal intelligence or less that
+could be described as a ``critter''. This includes insects, magical beasts,
+and oozes, but not including undead, outsiders, or aberrations.
 %
 
 %
@@ -195,6 +359,14 @@ See also the notes at ``Scrying''.
 %
 
 %
+\subsection{Suggestion}
+
+Suggestion works on anything that can understand you. This usually means
+human-level intelligence, but Speak with Animals can circumvent that that.
+Bear in mind that powerful creatures typically have very good Will saves.
+%
+
+%
 %
 \section{New Spells}
 
@@ -231,6 +403,58 @@ per target per round that the effect is maintained. This includes the
 round in which the performance is initiated.
 
 For purposes of computing the save DC, this is a L2 effect (not L3).
+%
+
+%
+\subsection{Binding Contract}
+
+Cleric~3, Wizard~3
+
+V/S/M, one living creature, indefinite, n/a save (see below)
+Material component is 5000~sp worth of diamonds.
+
+Casting time is anywhere from a few rounds to several minutes; it involves
+reading out the contract and making sure it's understood.
+
+This spell enforces the terms of a contract on the recipient. The recipient
+must understand and willingly agree to abide by the terms of the contract
+for the spell to take effect; no saving throw is made (they voluntarily
+failed it). If the recipient does not agree to be bound by the contract,
+the spell is expended but the material components are not.
+
+The recipient has a general idea if a given action or inaction would break
+the contract; this makes it hard to accidentally break it.
+
+The contracting parties both know the current compliance state and are
+updated about changes to compliance.
+
+Immediately upon breaching the terms of the contract, the recipient is
+Sickened, and gets a -2 penalty to all ability scores (without delay).
+The penalty gets worse (by -2) every 24 hours, to a maximum of -8. This
+cannot reduce an ability score below 3. The penalty remains until
+restitution for all outstanding breaches is made. When no outstanding
+breaches remain, symptoms reduce in severity every 24 hours (with the
+Sickened condition disappearing when the last of the ability penalties do).
+
+Terms of restitution for breaches are usually spelled out in the contract.
+The person who offered the contract can forgive the recipient of one or
+more breaches at their discretion.
+
+The contract remains in force indefinitely, irrespective of whether
+penalties have occurred and of whether breaches are outstanding or forgiven.
+The contract ends when the recipient dies (which the offerer immediately
+knows about), or when the person who offered the contract explicitly ends
+the contract or dies (both of which the recipient immediately knows about).
+
+There is a version that's SL~5 that affects a number of recipients up to
+the caster level (with one set of shared terms). The material component for
+this version of the spell is \mbox{20,000~sp} worth of diamonds (beakeven
+point vs the SL~3 spell is 4 recipients).
+
+The Harbourton version of this spell traditionally involves reading out the
+offered terms, asking ``do you understand the offer?'', and then asking
+``do you agree to this contract?''. Replying ``yes'' to both completes the
+spell.
 %
 
 %
