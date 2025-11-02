@@ -8,6 +8,8 @@
 %
 \section{Modified Spells}
 
+% FIXME - Flag dimensional magic and teleport spells as removed.
+
 %
 \subsection{Ant Haul}
 
@@ -189,6 +191,41 @@ longer.
 %
 
 %
+\subsection{Floating Disk}
+
+Floating Disk has several standard shapes; the caster chooses a shape at
+the time of casting, depending on what type of cargo is being moved.
+
+For moving boxes, crates, and miscellaneous goods, the standard shapes are
+a 3' diameter disk, a 2.5' square, or a 2' by 3.5' rectangle. There are
+variants with and without a 4" tall lip at the edge.
+
+For moving liquids, standard shapes are a hemispher 2' in diameter (volume
+4 cubic feet), and a cylinder 2' wide and 1' high (volume 3 cubic feet).
+Water weighs 55~lbs per cubic foot. One cubic foot is about 7.5 gallons.
+
+The weight limit is 100~lbs per caster level. If the weight limit is
+exceeded, the spell fails and the disk winks out. The disc can be raised and
+lowered, from touching the ground to 3 feet above ground level.
+
+This spell is widely used in warehouses for moving freight, for loading and
+unloading carts, and even in place of carts when moving small amounts of
+cargo (anything you'd use a pallet truck for in our world). Standard pallets
+are built so that a rectangular disk can fit under the pallet without the
+pallet sliding off.
+
+There is a version that's SL2 that has 10 times the weight limit, can be
+raised to 10 feet above ground level, and that lasts 2 hours per caster
+level. This is used for moving heavy cargo crates in the field, and for
+loading and unloading cargo from high shelves (anything you'd use a forklift
+for in our world).
+
+There is a ``Mass Floating Disk'' spell that's SL3 and gives one disk per
+caster level (all controlled by the caster), and a ``Mass Freight Pallet''
+spell that's SL4 and gives one heavy-duty disk per caster level.
+%
+
+%
 \subsection{Geas}
 
 Geas works on anything sapient (from a human to a unicorn to a dragon).
@@ -263,6 +300,14 @@ modes (equal to half each mode's base speed, rounded down per above).
 %
 
 %
+\subsection{Magic Circle against Evil}
+
+As with ``Protection from Evil'', this has been split into two spells.
+See ``Protection from Immaterial Influence'' and ``Protection from Metal
+Control'' in the ``New Spells'' section.
+%
+
+%
 \subsection{Magic Fang}
 
 Magic Fang works as-described in the CRB (giving +1 to a single natural
@@ -280,6 +325,13 @@ Greater Magic Fang works on all natural weapons and gives a scaling bonus
 There is a ``Greater'' version of Nondetection that increases the DC by
 5, and is also more effective at degrading scrying. See notes at
 ``Scrying''. Greater Nondetection is Wizard~5.
+%
+
+%
+\subsection{Protection from Evil}
+
+This spell has been split into ``Protection from Immaterial Influence''
+and ``Protection from Metal Control'' (see the ``New Spells'' section).
 %
 
 %
@@ -373,6 +425,7 @@ Bear in mind that powerful creatures typically have very good Will saves.
 % FIXME: Apprentice's Spinner, Wizard's Wheel, Unseen Oxen
 % FIXME: Plant diagnostics, healing, yield increase, grow in unfertile.
 % FIXME: Poison/disease diagnostics, delaying, curing.
+% These are under "protect/communal" notes for some reason.
 % FIXME: Privacy Screen. As "Darkness" (20' radius).
 
 %
@@ -483,6 +536,51 @@ inspection (up to 3 rounds).
 %
 
 %
+\subsection{Magic Circle against Immaterial Influence}
+
+Cleric 3, Inquisitor 3, Paladin 3, Wizard 3
+person or object touched, 10 minutes/level, V/S/DF
+
+At the time of casting, all creatures within a 10' emanation of the the
+person or object touched are granted the effects of ``Protection from
+Immaterial Influence''. The effect lasts as long as they remain within the
+emanation (until the spell's duration expires).
+
+An alternate version of the spell exists (a separate spell) that is used
+for containment. It is cast on a circle, and while the spell is active
+grants PfImIn's protections to people outside the circle when resisting
+effects or attacks that come from inside the circle.
+
+There is a version that's SL5 that provides a -4 attack roll penalty and
+a +4 saving throw bonus.
+
+``Communal'' and ``Mass'' versions of this spell could be made, and might
+or might not already be invented/available at the DM's discretion.
+%
+
+%
+\subsection{Magic Circle against Mental Control}
+
+Cleric 3, Inquisitor 3, Paladin 3, Wizard 3
+person or object touched, 10 minutes/level, V/S/DF
+
+At the time of casting, all creatures within a 10' emanation of the the
+person or object touched are granted the effects of ``Protection from Mental
+Control''. The effect lasts as long as they remain within the emanation
+(until the spell's duration expires).
+
+An alternate version of the spell exists (a separate spell) that is used
+for containment. It is cast on a circle, and while the spell is active
+grants PfMC's saving throw bonuses to people outside the circle when
+resisting effects that come from inside the circle.
+
+There is a version that's SL5 that provides a +10 saving throw bonus.
+
+``Communal'' and ``Mass'' versions of this spell could be made, and might
+or might not already be invented/available at the DM's discretion.
+%
+
+%
 \subsection{Padded Weapon}
 
 Cleric 1, Wizard 1
@@ -503,7 +601,7 @@ but when flexibility is desired, this spell provides a nonlethal option.
 %
 
 %
-\subsection{Protection from Background}
+\subsection{Protection from Background Magic}
 
 Cleric 1, Druid 1, Ranger 1, Wizard 1
 
@@ -516,6 +614,61 @@ The ``Mass'' version is SL2, rather than the usual SL3.
 
 There is a version that's SL2 that reduces the effective background
 strength by two steps. The ``Mass'' version of that spell is SL3.
+%
+
+%
+\subsection{Protection from Immaterial Influence}
+
+Cleric 1, Inquisitor 1, Paladin 1, Wizard 1
+touch, 1 minute/level, V/S/DF
+
+This spell reduces the extent to which the Immaterial realm can influence
+the warded creature. This has several effects:
+
+\begin{itemize}
+%
+\item Summoned creatures, ghosts, and other entities that are ``concepts
+from the Immaterial Realm cothed in magically conjured bodies'' cannot
+physically touch a creature protected by the spell. Corporeal undead can
+still do so, as they are mundane matter animated by magic rather than
+conjured matter.
+%
+\item Entities such as those described above, along with corporeal undead
+and creatures posessed by immaterial entities, receive a -2 to attack rolls
+against the protected target. The protected target gets a +2 resistance
+bonus to saving throws made against effects that these entities generate.
+%
+\item The protected target cannot be drawn into shared dreams or visions.
+%
+\item The severity of immaterial influence on the target due to being a
+public figure (with lots of people thinking about them) is reduced by one
+step.
+%
+\end{itemize}
+
+There is a version that's SL3 that provides a -4 attack roll penalty, a
++4 saving throw bonus, and that reduces the severity of immaterial
+influence by 3 steps.
+
+``Communal'' and ``Mass'' versions of this spell exist.
+%
+
+%
+\subsection{Protection from Mental Control}
+
+Cleric 1, Inquisitor 1, Paladin 1, Wizard 1
+touch, 1 minute/level, V/S/DF
+
+This provides the target with a +5 saving throw bonus (resistance bonus)
+against Charm, Command, Suggestion, Dominate, and similar spells. If the
+spells are already in effect, they get a new saving throw.
+
+The target also receives a +5 bonus to saving throws (resistance bonus)
+against Detect Thoughts and similar mind-reading spells.
+
+There is a version that's SL3 that provides a +10 saving throw bonus.
+
+``Communal'' and ``Mass'' versions of this spell exist.
 %
 
 %
@@ -543,6 +696,31 @@ spell, per notes at ``Sending''. Signal quality is improved, mitigating
 interference.
 
 There is a ``Greater'' version at SL4 that is even more effective.
+%
+
+%
+\subsection{Smaw's Pencil}
+
+Cleric 2, Wizard 2
+V/S/M, filler rods touched, 10 minutes per caster level
+
+This performs stick-welding. Metal filler rods are consumed during welding.
+Dipping them in alchemical flux paste is wise if you want high-strength
+welds.
+
+You can gouge (cut metal) by using charcoal sticks instead of filler rods.
+These are consumed very quickly (ten times as much charcoal consumed as
+metal removed, by volume).
+
+You can braze by using a lower-melting filler rod. The target site heats up
+to near the melting point of the filler rod, not the melting point of the
+workpiece.
+
+You'll need to wear welding goggles to avoid temporary (or permanent)
+blindness. Flame-rated goggles will do, since you're only dealing with hot
+metal, not an arc.
+
+Enchanted devices with this effect exist, but are very expensive.
 %
 
 %
