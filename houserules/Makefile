@@ -9,6 +9,7 @@ DMNAME=$(BASENAME)-dmhouserules
 DOCBITS=\
 	$(BASENAME)-over.tex		\
 	$(BASENAME)-chargen.tex		\
+	$(BASENAME)-classes.tex		\
 	$(BASENAME)-skills.tex		\
 	$(BASENAME)-feats.tex		\
 	$(BASENAME)-spells.tex		\
