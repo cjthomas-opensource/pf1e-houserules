@@ -328,6 +328,15 @@ one target, those missiles' damage is added together before DR is applied
 %
 
 %
+\subsection{Mount}
+
+In addition to being ridden, horses conjured by this spell can be used as
+light draft animals.
+
+For heavier work, the ``Conjure Team'' spell is used.
+%
+
+%
 \subsection{Nondetection}
 
 There is a ``Greater'' version of Nondetection that increases the DC by
@@ -340,6 +349,15 @@ There is a ``Greater'' version of Nondetection that increases the DC by
 
 This spell has been split into ``Protection from Immaterial Influence''
 and ``Protection from Metal Control'' (see the ``New Spells'' section).
+%
+
+%
+\subsection{Purify Food and Drink}
+
+This does not affect poisons.
+
+This removes spoilage that is present in food, resulting in less food.
+There is a new spell (``Preserve Food and Drink'') that prevents spoilage.
 %
 
 %
@@ -476,11 +494,28 @@ having a familiar, animal companion, or bonded object.
 %
 \section{New Spells}
 
-% FIXME: Apprentice's Spinner, Wizard's Wheel, Unseen Oxen
 % FIXME: Plant diagnostics, healing, yield increase, grow in unfertile.
-% FIXME: Poison/disease diagnostics, delaying, curing.
-% These are under "protect/communal" notes for some reason.
 % FIXME: Privacy Screen. As "Darkness" (20' radius).
+
+%
+\subsection{Apprentice's Spinner}
+
+Wizard 0
+
+V/S, 10 minutes per caster level
+
+This makes an object spin, with force comparable to what you'd get with a
+child's spinning top, or (if geared down) turning a screwdriver.
+
+This has little use industrially, but sees niche household uses (light-duty
+sewing machines, record players, and the equivalent of wind-up toys). Clocks
+are sometimes enchanted with this effect to be self-winding.
+
+\textit{NOTE: In some campaigns, casting this on an appropriately built
+mechanism or a flywheel made from an appropriate material can extend the
+duration to 1 hour per caster level, much as gold extends the Light cantrip.
+This is an optional change.}
+%
 
 %
 \subsection{Bardic Masterpiece: Scare}
@@ -515,7 +550,7 @@ For purposes of computing the save DC, this is a L2 effect (not L3).
 %
 \subsection{Binding Contract}
 
-Cleric~3, Wizard~3
+Cleric 3, Wizard 3
 
 V/S/M, one living creature, indefinite, n/a save (see below)
 Material component is 5000~sp worth of diamonds.
@@ -565,12 +600,104 @@ spell.
 %
 
 %
+\subsection{Conjure Team}
+
+Wizard 2
+
+V/S, close (25' + 5'/2 levels), 6 or 12 hours (D) (see below)
+
+This conjures either one or two draft animals (draft horses or oxen), in
+the same manner as the ``Mount'' spell. If one animal is conjured, it lasts
+for 12 hours; if two are conjured, they last for 6 hours.
+
+These are typically used to draw ploughs, wagons, or large carriages.
+
+As conjured creatures, they do not need to eat or sleep, but also aren't
+capable of strenuous exertion (such as sprinting/galloping).
+%
+
+%
 \subsection{Detect Background}
 
 Cleric 0, Druid 0, Wizard 0
 
 This tells the caster what the level of background magic around them is
 (none, low, medium, high, or extreme).
+%
+
+%
+\subsection{Delay Specific Poison}
+
+bard 1, cleric 1, druid 1, paladin 1
+V/S/DF, creature touched, 1 hour/level, Fortitude negates (harmless)
+
+This is a collection of many different spells, not one spell. Each spell
+functions as ``Delay Poison'', but only affecting one narrow class of
+poisons (such as snake venom or specific classes of alchemical reagents).
+
+These spells are widely used for first aid in situations where poisonous
+substances or venemous creatures are likely to be encountered. Potions are
+widely available for commonly-encountered types.
+
+The ``Communal'' version of this spell is SL1 for rangers, SL2 for
+everyone else (since rangers get non-specific ``Delay Poison'' as SL1).
+%
+
+%
+\subsection{Diagnose Disease}
+
+cleric 1, druid 1, ranger 1
+
+V/S/DF, one subject per caster level, Fortitude negates (harmless)
+
+This identifies mundane diseases that the subject is suffering from. This
+does not identify poison or wounds, though infections within wounds will
+be flagged by the spell.
+
+This spell is used during triage and as a first step before magical or
+non-magical treatment.
+
+A non-magical medical examination can accomplish the same thing, but the
+spell works immediately and does not require a skill check.
+%
+
+%
+\subsection{Diagnose Injury}
+
+cleric 1, druid 1, ranger 1
+
+V/S/DF, one subject per caster level, Fortitude negates (harmless)
+
+This identifies physical injuries that the subject is suffering from. This
+does not identify poison or disease, though injuries made worse by these
+will be flagged by the spell.
+
+This spell is used during triage and as a first step before magical or
+non-magical treatment.
+
+A non-magical medical examination can accomplish the same thing, but the
+spell works immediately and does not require a skill check.
+%
+
+%
+\subsection{Diagnose Poison}
+
+cleric 1, druid 1, ranger 1
+
+V/S/DF, one subject per caster level, Fortitude negates (harmless)
+
+This identifies mundane poisons that are present within the subject, and
+damage caused by those poisons. In mechanical terms, the caster knows
+how many more saving throw successes are needed to end the poisoning (if
+the poisoning is ongoing), whether poison is present but delayed by Delay
+Poison, or whether poison is present but has already caused as much damage
+as it's going to (saves already successful).
+
+This spell is used during triage and as a first step before magical or
+non-magical treatment.
+
+A non-magical medical examination can accomplish the same thing, but the
+spell works immediately and does not require a skill check.
 %
 
 %
@@ -635,6 +762,17 @@ or might not already be invented/available at the DM's discretion.
 %
 
 %
+\subsection{Neutralize Specific Poison}
+
+bard 3, cleric 3, druid 2, ranger 2, paladin 3
+V/S/DF, creature touched, Fortitude negates (harmless)
+
+This is a collection of many different spells, not one spell. Each spell
+functions as ``Neutralize Poison'', but only affecting one narrow class of
+poisons (such as snake venom or specific classes of alchemical reagents).
+%
+
+%
 \subsection{Padded Weapon}
 
 Cleric 1, Wizard 1
@@ -652,6 +790,17 @@ nonlethal force. This spell is widely used for police work.
 
 It is normally more cost-effective to buy a purpose-built nonlethal weapon,
 but when flexibility is desired, this spell provides a nonlethal option.
+%
+
+%
+\subsection{Preserve Food and Drink}
+
+Cleric 0, Druid 0
+10', 1 cubic foot per level of food and water, 24 hours
+
+This spell prevents the targetted food and drink from spoiling. It may still
+suffer contamination, so packaging it properly is advised if it's being
+transported.
 %
 
 %
@@ -723,6 +872,17 @@ against Detect Thoughts and similar mind-reading spells.
 There is a version that's SL3 that provides a +10 saving throw bonus.
 
 ``Communal'' and ``Mass'' versions of this spell exist.
+%
+
+%
+\subsection{Remove Specific Disease}
+
+cleric 2, druid 2, ranger 2
+V/S/DF, creature touched, Fortitude negates (harmless)
+
+This is a collection of many different spells, not one spell. Each spell
+functions as ``Remove Disease'', but only affecting one narrow class of
+diseases.
 %
 
 %
@@ -798,6 +958,47 @@ also helpful for forge work and may have niche uses elsewhere.
 Enchanted devices with this effect exist but are uncommon, as it's usually
 cheaper to use mundane welding goggles or visors if the spell isn't
 available.
+%
+
+%
+\subsection{Unseen Oxen}
+
+Wizard 2
+
+V/S, 10 minutes per caster level
+
+This makes a heavy object such as a millstone or large flywheel spin, with
+force comparable to what you'd get with a pair of oxen powering a mill or
+pulling a wagon.
+
+This can be used to power heavy industrial equipment or as the ``prime
+mover'' of a small factory. It can also be used to make self-propelled
+wagons, though conjured draft animals are usually more practical.
+
+\textit{NOTE: In some campaigns, casting this on an appropriately built
+mechanism or a flywheel made from an appropriate material can extend the
+duration to 1 hour per caster level, much as gold extends the Light cantrip.
+This is an optional change.}
+%
+
+%
+\subsection{Wizard's Wheel}
+
+Wizard 1
+
+V/S, 10 minutes per caster level
+
+This makes an object up to the size of a cart-wheel spin, with force
+comparable to what you'd get pedalling a bicycle or pumping a treadle.
+
+This can be used to power light industrial equipment or heavy household
+machinery. It can also be used to make self-propelled carts or scooters,
+though conjuring a mount is usually more practical.
+
+\textit{NOTE: In some campaigns, casting this on an appropriately built
+mechanism or a flywheel made from an appropriate material can extend the
+duration to 1 hour per caster level, much as gold extends the Light cantrip.
+This is an optional change.}
 %
 
 %
