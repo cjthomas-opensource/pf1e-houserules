@@ -16,12 +16,170 @@
 %
 \section{Armour}
 
-\fixme{Change prices and maybe rework.}
+%
+\subsection{Armour as AC Plus DR}
 
 Per the variant rules notes, armour (including shields) grants an ``armour''
 bonus, rather than granting an AC bonus. A character's AC bonus is half
 their total ``armour bonus'' rounded down, and a character's DR bonus is
 half their total ``armour bonus'' rounded up.
+%
+
+%
+\subsection{Donning Armour}
+
+Times for donning armour in the Core Rulebook and SRD are unrealistic to
+the point of being silly. Revised times are as follows:
+
+\begin{tabular}{lll} \hline
+\textbf{Type} & \textbf{Time Alone} & \textbf{With Help} \\ \hline
+Light & 1d2 rounds & 1 round \\
+Medium & 1d2+1 rounds & 1d2 rounds \\
+Heavy & 1d3+2 rounds & 1d2+1 rounds \\
+Shield & move action & n/a \\
+\hline
+\end{tabular}
+%
+
+%
+\subsection{Armour Types and Prices}
+
+Several armour types in the Core Rulebook either duplicate each other or
+didn't actually exist, so these are being consolidated and revised. The
+costs are also about \textbf{one tenth the cost} of the Core Rulebook and
+SRD values (more or less).
+
+Armour generally falls into four categories:
+\begin{itemize}
+\item Work clothes. This is mostly leather-based personal protective
+equipment.
+\item Chain armour. This may have partial coverage (chain shirt) or be more
+complete.
+\item Reinforced armour (for lack of a better term). This is cloth or
+leather with metal components attached to it.
+\item Plate armour. This may have partial coverage (breastplate) or be more
+complete.
+\end{itemize}
+
+Adjusted prices and statistics for armour are given below. This could be
+back-ported to be SRD-compatible by multiplying prices by 10.
+\textbf{Statistics have been adjusted} slightly from the SRD versions.
+
+\begin{tabular}{|l|ll|l|lll|}\hline
+\textbf{Type} & \textbf{Cost (sp)} & \textbf{Weight (lbs)} &
+\textbf{Bonus} & \textbf{Max Dex} & \textbf{ACP} & \textbf{Spell Fail} \\
+\hline
+Cloth PPE &
+8 sp & 10 lbs & 1 & +8 & 0 & 5\% \\
+Leather PPE &
+15 sp & 15 lbs & 2 & +6 & 0 & 10\% \\
+Reinforced Leather &
+25 sp & 20 lbs & 3 & +5 & -1 & 15\% \\
+Chain Shirt &
+80 sp & 25 lbs & 4 & +4 & -2 & 20\% \\
+\hline
+Scale Mail &
+50 sp & 30 lbs & 5 & +3 & -4 & 25\% \\
+Chain Mail &
+150 sp & 40 lbs & 6 & +2 & -5 & 30\% \\
+Breastplate &
+250 sp & 30 lbs & 6 & +3 & -4 & 25\% \\
+\hline
+Half-Plate &
+600 sp & 40 lbs & 8 & +1 & -6 & 35\% \\
+Full Plate &
+1500 sp & 50 lbs & 9 & +0 & -7 & 40\% \\
+\hline
+Light Shield &
+5 sp & 5 lbs & 1 & & -1 & 5\% \\
+Heavy Shield &
+10 sp & 10 lbs & 2 & & -2 & 15\% \\
+\hline
+\end{tabular}
+
+Detailed descriptions are below. For any given type of armour, there are
+many possible implementations and styles. Changes that would have been
+reflected by different armour types in the Core Rulebook or SRD are instead
+reflected by different degrees of masterworking within a category. One
+category can encompass several types of armour.
+
+\begin{itemize}
+%
+\item \textbf{Cloth PPE} is along the lines of heavy canvas work clothes.
+Fancier versions may include padding or small amounts of leather.
+%
+\item \textbf{Leather PPE} is along the lines of welding (or smithing)
+clothing. Fancier versions may include areas that are reinforced with
+multiple layers, or incorporate boiled leather (hardened), or both.
+%
+\item \textbf{Reinforced Leather} is PPE that is expected to withstand
+impact, sharp implements, or both. Modern examples are biking leathers
+with polycarbonate plates, and steel-toed work boots. This typically has
+padding underneath it.
+%
+\item \textbf{Chain Shirt} is chain mail with partial coverage. For
+purposes of game rule abstraction, we're treating it mechanically the same
+way we'd treat full-coverage armour.
+%
+\item \textbf{Scale Mail} is a catch-all category including scale, lamellar,
+and brigandine armour. It is made from metal scales or small plates sewn
+to a cloth or leather backing (or to each other, for lamellar armour). For
+scale, the metal scales are on the outside; for brigandine, the metal plates
+are on the inside. In both cases, padding is usually worn under it.
+%
+\item \textbf{Chain Mail} is chain armour with full coverage (torso, arms,
+and legs).
+%
+\item \textbf{Breastplate} is plate armour covering the torso only. For
+purposes of game rule abstraction, we're treating it mechanically the
+same way we'd treat full-coverage armour.
+%
+\item \textbf{Half-Plate} is plate armour with partial protection for
+the limbs. It typically includes a breastplate, vambraces, greaves, and
+helmet. Fancier versions may include pauldrons and other components. A
+real-world example would be Roman lorica segmentata.
+%
+\item \textbf{Full Plate} is plate armour with full coverage. Gaps may
+have chain mail under them, or the armour may overlap in a way that leaves
+no gaps.
+%
+\item \textbf{Shields} are made from laminated wooden planks covered with
+leather, and sometimes reinforced with metal (typically at the edge). Per
+the Core Rulebook, objects can be held in the shield hand with a light
+shield but not with a heavy shield. The shield hand can't be used with
+a weapon or to perform tasks requiring dexterity (drop the shield first).
+%
+\end{itemize}
+%
+
+%
+\subsection{Removed Types}
+
+The following types of armour from the Core Rulebook and SRD have been
+removed:
+
+\begin{itemize}
+%
+\item Hide armour has no role for PCs or for NPCs. Poor-quality or
+improvised armour would be variants of leather instead.
+%
+\item A realistic version of splint mail would probably be high-end
+reinforced leather under the house rules classification. The Core Rulebook
+version serves little purpose (much worse mobility than a breastplate for
+marginal AC improvement).
+%
+\item The Core Rulebook's ``banded mail'' was an RPG invention. The closest
+real-world equivalent is Roman lorica segmentata, which is half-plate under
+the house rules classification.
+%
+\item There was a real-world shield called a ``buckler'', but it was used
+very differently than the Core Rulebook version. The Core Rulebook's
+version was a way to get the benefit of a shield while still being able to
+use that hand for weapons. Get armour with vambraces (and a better armour
+rating) instead.
+%
+\end{itemize}
+%
 
 %
 %
