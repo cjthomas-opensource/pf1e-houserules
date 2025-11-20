@@ -8,9 +8,307 @@
 %
 \section{Masterworking}
 
-\fixme{Consolidate rules.}
+\textit{Adapted from Tony's Duanor campaign, with permission.}
 
-\fixme{Add sqrt(cost * 100) rule.}
+Items may be of improved quality (better artistic quality, different
+materials, or just better at their intended purpose). All of these are
+covered by ``masterworking''. The rules here supersede the Core Rulebook
+and SRD's rules for masterwork items.
+
+Improvements are implemented using ``masterworking increments'' in any
+of several categories. These are planned at the time an object is crafted,
+and cannot be re-worked afterward.
+
+%
+\subsection{Cost and Crafting DC}
+
+The cost of a category's masterworking is computed using an object's
+``base cost'':
+\begin{center}
+$\mathbf{mw~cost} = \mathbf{increments}^2 \times \mathbf{base~cost} \div 2$
+\end{center}
+
+The amount by which a category's masterworking increases the crafting DC
+is:
+\begin{center}
+$\mathbf{DC~increase} = \mathbf{increments}^2 \times 2$
+\end{center}
+
+For purposes of computing masterworking cost, the ``base cost'' is not
+always the actual cost of a non-masterwork item. There are several special
+cases:
+\begin{itemize}
+%
+\item For items costing less than 100~sp, the ``base cost'' is higher than
+the retail cost:\\
+$\mathbf{base~cost} = sqrt( 100~\mathrm{sp} \times \mathbf{retail~cost} )$
+%
+\item For adding enchantability slots, the ``base cost'' is always at least
+100~sp.
+%
+\item For adding ``artistic quality'', the masterworking cost is
+\textbf{not divided by 2}. Drop the ``$\div 2$'' part of the equation.
+%
+\end{itemize}
+%
+
+%
+\subsection{Special Materials}
+
+Making objects out of gold or mithral or adamantine requires masterworking
+(in the ``materials processing'' category), which adds masterworking cost
+independently of the cost of the material itself.
+
+\begin{itemize}
+\item Bronze, iron, and (for jewellery) silver don't require masterworking.
+\item Silver weapons and gold jewellery require one masterworking increment.
+\item Mithral and aurichalcum require two masterworking increments.
+\item Adamantine requires three masterworking increments.
+\end{itemize}
+
+For objects with significant weight (such as armour and weapons), the cost
+of the material is computed based on that weight (remembering that mithral
+is half the weight of iron). See the ``commodities'' section for material
+prices.
+
+For jewellery, the cost of an item made from more valuable material is
+computed as a multiplier to the ``silver jewellery'' price:
+\begin{itemize}
+\item Bronze and brass are 1/4x.
+\item Gold is 10x.
+\item Mithral is 50x.
+\item Adamantine is 100x.
+\item Aurichalcum is 200x.
+\end{itemize}
+
+Decorations such as gemstones, enamel, and gilding/plating are not treated
+explicitly, but are instead handwaved based on a combination of the
+material and the artistic quality.
+
+\subsubsection{Sale Price vs Crafting Price}
+
+For computing the \textbf{crafting time} of an object made from precious
+materials (or from cheaper materials, such as brass jewellery), calculate
+the price as if it was made from default materials (but still using the
+``materials processing'' masterwork increments).
+
+For computing the \textbf{retail price} of the finished product:
+\begin{itemize}
+\item If there are ``artistic quality'' masterworking increments, the cost
+of those increments is multiplied by the material price ratio.
+\item If there are other masterworking increments, their cost is unchanged.
+\item The base price of the object is adjusted per above (multiplied if it's
+jewellery, or having the commodity material price added if it's a large
+object).
+\end{itemize}
+
+The upshot is that fancy jewellery made out of gold sells for ten times
+more than fancy jewellery made out of silver but doesn't take ten times as
+long to make. See the ``fancy ring'' example below for a detailed
+calculation.
+%
+
+%
+\subsection{Artistic Quality}
+
+This masterworking category makes objects look nicer or more impressive
+without making them more functional.
+
+A single masterworking improvement corresponds to the ``Superior'' quality
+in the old Duanor rules, two improvements corresponds to ``Exceptional'',
+three improvements to ``Outstanding'', and four to ``Legendary''.
+
+Most people are capable of producing objects of Superior artistic quality,
+but Exceptional quality or better requires either years of practice or the
+Inspired Artist feat.
+
+For adding ``artistic quality'' masterworking, the masterworking cost is
+\textbf{not divided by 2}. Drop the ``$\div 2$'' part of the equation.
+%
+
+%
+\subsection{Weapons and Armour}
+
+Masterworking categories specific to weapons are as follows:
+\begin{itemize}
+\item ``Attack'' category -- Improve to-hit rolls (+1 per increment).
+\item ``Damage'' category (melee only) --
+Improve damage rolls (+1 per increment).
+\item ``Speed'' category -- Improve initiative (+1 per increment).
+\item ``Strength'' category (longbow and shortbow only) --
+Improve damage and range, per the ``Bows'' section (+1 strength rating
+per increment).
+\end{itemize}
+
+``Light'' weapons can support one increment per category, ``one-handed''
+weapons can support two increments per category, and ``two-handed'' weapons
+can support three increments per category. For purposes of these limits,
+treat shortbows and light crossbows as ``one-handed'' and longbows and
+heavy crossbows as ``two-handed''.
+
+Masterworking categories specific to armour are as follows:
+\begin{itemize}
+\item ``Armour'' category -- Improve the armour rating (+1 per increment).
+\item ``Mobility'' category -- Increase the maximum Dex bonus, reduce the
+armour check penalty, and reduce spell failure chance. Each increment
+improves the Dex limit and ACP by 1 and spell failure by 5\%.
+\item Reduce weight by 10\% (per increment).
+\end{itemize}
+
+Light armour can support one increment per category, medium armour can
+support two increments per category, and heavy armour can support three
+increments per category.
+%
+
+%
+\subsection{Tools}
+
+Masterwork tools usually aren't bought individually, but are instead part
+of the equipment kits described in the ``Career'' equipment section.
+
+The +2 set of equipment includes a wide selection of tools of normal
+quality and a small number of +1 masterwork tools. The +4 set of equipment
+has a wide selection of +1 masterwork tools and several +2 masterwork tools.
+
+The ``best I can get with minimal funds'' starting tools includes a few
+vital tools of normal quality and a few more of poor quality.
+%
+
+%
+\subsection{Enchantability}
+
+Masterworking for enchantability involves making space for a runic substrate
+(the magical equivalent of a printed circuit board), and for larger items
+adding fine aurichalcum wire or plated traces to act as waveguides.
+Supporting more magical effects requires a more complicated substrate, more
+aurichalcum, and more gemstones to hold magical charge, and none of these
+are cheap.
+
+Each ``enchantability'' masterworking improvement adds two ``slots''.
+Effects that are implemented take up slots:
+\begin{itemize}
+\item Spell effects take up one slot per spell level.
+\item Enhancement bonuses to weapons and armour take up one slot per ``plus''.
+\item Other bonuses to AC or armour take up one slot per ``plus''.
+\item Bonuses to ability scores or saves take up one slot per \textbf{+2}
+bonus or fraction thereof.
+\item Bonuses to skills take up one slot per \textbf{+3} bonus or fraction
+thereof.
+\item Making an item function as a cleric's holy symbol or as a wizard's
+bonded item takes up two slots.
+\end{itemize}
+
+Permanent magic items need this form of masterworking. For expendable items,
+the cost is folded into the enchantment cost of the item.
+%
+
+%
+\subsection{Poor Quality}
+
+Items can be made with penalties rather than bonuses to some of their
+traits. This makes them easier and faster to craft. Objects can be made
+with 1 or 2 such traits, reducing the cost to 75\% or 50\% of the normal
+cost, and reducing the crafting DC by 2 for each trait.
+
+Typical traits are:
+\begin{itemize}
+\item -1 to a tool's skill checks.
+\item -1 to a weapon's to-hit or damage rolls.
+\item -1 to a piece of armour's armour rating.
+\item Wears out quickly (see below).
+\end{itemize}
+
+This can't be combined with masterworking. It usually represents bad
+apprentice work or someone trying to make a profit selling cheap goods to
+people who can't afford anything better.
+
+Regarding ``Wears Out Quickly'':
+\begin{itemize}
+\item Most equipment is assumed to be durable enough to last for many years
+if properly cared for. For situations where this needs to be checked, roll
+once per year and assume failure on 2 (1\%), 2-3 (3\%), or 2-4 (6\%),
+depending on circumstances.
+\item Equipment that wears out quickly is checked per month, rather than
+per year.
+\end{itemize}
+%
+
+%
+\subsection{Examples}
+%
+\subsubsection{Standard Warding Amulet}
+
+This is a silver medallion with enamelled artwork, on a sturdy steel chain.
+It has two slots for enchantment: the ``Adventurer's Amulet'' version has
+``Protection from Background Magic'' and ``Endure Elements'', while the
+``Mind Ward'' version has ``Protection from Immaterial Influence'' and
+``Protection from Mental Control''. Lots of other variants exist. It could
+also be turned into a holy symbol or bonded object.
+
+Retail cost of a silver medallion: 25~sp (DC 17).
+
+``Base price'' for masterworking: 50~sp (the square root of 25~x~100), or
+100~sp for enchantability.
+
+Masterworking:
+\begin{itemize}
+\item +1 artistic quality (+50~sp, +2~DC)
+\item +1 enchantability (+50~sp, +2~DC)
+\end{itemize}
+
+MSRP before actually adding the enchantments: 125~sp. Crafting DC: 21.
+%
+\subsubsection{Masterwork Reinforced Leather PPE}
+
+This is reinforced leather PPE of the best available quality, with multiple
+layers of boiled leather, metal shims at strategic locations, a padded
+under-layer, and good tailoring to avoid hampering mobility. It's high-end
+front-line police armour.
+
+Retail cost of reinforced leather PPE: 25~sp (DC 17).
+
+``Base price'' for masterworking: 50~sp (the square root of 25~x~100).
+
+Masterworking:
+\begin{itemize}
+\item +1 armour (25~sp, +2~DC)
+\item +1 mobility (25~sp, +2~DC)
+\end{itemize}
+
+MSRP: 75~sp. Crafting DC: 21.
+
+Stats: armour +4, max dex +6, ACP 0, SF 10\%.
+
+This is more difficult to make than a chain shirt, but offers the same
+protection and has much better mobility.
+%
+\subsubsection{Fancy Ring}
+
+This is a class ring or signet ring owned by someone who has money and
+wants you to know it. The ring is white gold with elaborately patterned
+accents in rose gold and yellow gold.
+
+Retail cost of a silver ring: 75~sp (DC 19).
+
+``Base price'' for masterworking: 87~sp (the square root of 75~x~100).
+
+Made of gold (price multiplier x10), exceptional artistic quality.
+
+Masterworking:
+\begin{itemize}
+\item +1 material (44~sp, +2 DC)
+\item +2 art quality (348~sp, +8 DC)
+\item +1 enchantability (+50~sp, +2 DC)
+\end{itemize}
+
+Price for calculating crafting time: 517~sp (75 ring, 348 art, 94 other).
+Crafting DC: 31
+
+MSRP before adding enchantments: 4324~sp (750 ring, 3480 art, 94 other)
+
+Typical enchantments might be Comprehend Languages (always active), Detect
+Poison (always active), and Arcane Mark (for adding invisible authentication
+text when used as a signet ring or rolled seal).
 
 %
 %
@@ -76,7 +374,7 @@ Leather PPE &
 Reinforced Leather &
 25 sp & 20 lbs & 3 & +5 & -1 & 15\% \\
 Chain Shirt &
-80 sp & 25 lbs & 4 & +4 & -2 & 20\% \\
+70 sp & 25 lbs & 4 & +4 & -2 & 20\% \\
 \hline
 Scale Mail &
 50 sp & 30 lbs & 5 & +3 & -4 & 25\% \\
@@ -190,12 +488,16 @@ values. This is subject to adjudication by the DM on a case-by-case basis.
 
 Weapons still cost more than the metal used to make them, by a fair bit.
 
+Per the ``2d10'' house rule, \textbf{threat ranges are increased by 1}
+over the SRD's values. Effects or feats that double threat ranges instead
+increase them by 1.
+
 Most ``exotic weapons'' are considered martial weapons for the cultures
 that they are found in, and aren't found elsewhere. The DM will adjudicate
 these on a case-by-case basis. About half of them are gimmicks from
 high-fantasy campaigns and won't actually work as weapons.
 
-Modified, and removed weapons are described below.
+Modified and removed weapons are described below.
 
 %
 \subsection{Knife}
@@ -236,6 +538,38 @@ damage and your range increment decreases by 10' (for a shortbow) or 20'
 
 Bows with negative strength bonus exist; these are poor-quality goods
 (per the masterworking section).
+%
+
+%
+\subsection{Sap, Truncheon, and Other Police Weapons}
+
+Nonlethal (or less-lethal) bludgeoning weapons are available, and are
+widely used by law enforcement:
+
+\begin{itemize}
+%
+\item The ``sap'' is a short weighted baton with a soft head. It costs 2~sp,
+weighs 2~lbs, does 1d4 damage, and is otherwise identical to a light mace.
+It is a Simple weapon. This replaces the Core Rulebook's ``sap''.
+%
+\item The ``truncheon'' is a longer weighted baton with padding. It costs
+4~sp, weighs 4~lbs, does 1d6, and is otherwise identical to a heavy mace.
+It is a Simple weapon.
+%
+\item The ``riot flail'' is a padded version of a heavy flail. It costs
+10~sp, weighs 8~lbs, does 1d8, and is otherwise identical to a heavy flail.
+It is a Martial weapon.
+%
+\item The ``man-catcher'' is a pole-arm intended to be used to pin a target
+in place. It is clumsy to use as a weapon (treat it as doing 1d6~B of
+lethal damage if used as such). Its intended function is to be used as a
+Reach weapon to make Grapple checks (without provoking an attack of
+opportunity). It grants a +2 bonus to CMB and CMD for purposes of initiating
+and maintaining control of such a grapple. It costs 10~sp and weighs 12~lbs.
+It is considered a Martial weapon for anyone who has police training, and an
+Exotic weapon otherwise.
+%
+\end{itemize}
 %
 
 %
@@ -529,7 +863,7 @@ ox & & 150 \\
 %
 \section{Travel}
 
-\fixme{NYI}
+\fixme{Travel NYI}
 
 \iffalse
 \begin{tabular}{lll}\hline
