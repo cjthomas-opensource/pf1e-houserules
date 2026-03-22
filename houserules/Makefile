@@ -13,6 +13,7 @@ DOCBITS=\
 	$(BASENAME)-skills.tex		\
 	$(BASENAME)-feats.tex		\
 	$(BASENAME)-equip.tex		\
+	$(BASENAME)-combat.tex		\
 	$(BASENAME)-spells.tex		\
 	$(GUIDENAME).tex		\
 	$(DMNAME).tex

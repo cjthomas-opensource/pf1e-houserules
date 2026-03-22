@@ -1,0 +1,318 @@
+% "World of Adventure" campaign guide - Combat
+% Written by Christopher Thomas.
+
+\chapter{Combat}
+\label{sect-combat}
+
+%
+%
+\section{The Big Changes}
+
+%
+\subsection{Armour Rating}
+
+Armour has an ``armour rating'', rather than directly granting an AC bonus.
+Shields likewise have an armour rating rather than an AC bonus.
+
+A character's AC is half their armour rating rounded down, and a
+character's DR is half their armour rating rounded up.
+
+Per the spell descriptions, Mage Armour and Shield also give armour bonuses
+instead of AC bonuses. ``Dodge'', ``deflection'', and ``luck'' bonuses to
+AC tend to remain AC bonuses.
+
+Some types of damage (such as sonic damage and damage from adamantine
+weapons) can bypass armour-based DR.
+
+%
+\subsection{Vigor and Wounds}
+
+Instead of ``hit point'', characters have ``vigor points'' and ``wound
+points''.
+
+Vigor points are gained at level-up in the same manner as hit points. These
+represent superficial cuts, bruises, and other injuries that are not
+life-threatening.
+
+PCs get maximum vigor points at first level, and after that can either roll
+(re-rolling any result of ``1'') or can take half-max-plus-one (the
+average roll rounded up).
+
+Wound points do not change with level. Damage to wounds represents
+life-threatening injuries. Wound points are equal to a creature's
+constitution score multiplied by a size multiplier (modified from the SRD's
+values):
+
+\begin{tabular}{lc} \hline
+\textbf{Size} & \textbf{Multiplier} \\ \hline
+Fine & $\times \frac{1}{8}$ \\
+Diminutive & $\times \frac{1}{4}$ \\
+Tiny & $\times \frac{1}{2}$ \\
+\hline
+Small & $\times 1$ \\
+Medium & $\times 1$ \\
+Large & $\times 1\frac{1}{2}$ \\
+\hline
+Huge & $\times 2$ \\
+Gargantuan & $\times 4$ \\
+Colossal & $\times 8$ \\
+\hline
+\end{tabular}
+
+Some types of damage (such as fall damage or natural 20 critical hits)
+goes straight to wounds. Most forms of damage deplete vitality first.
+
+Wound points are not affected by \textit{temporary} changes in constitution.
+This includes changes caused by spells that change size (Enlarge, Reduce) or
+that directly affect constitution (Bear's Endurance), changes due to
+temporary ability score damage from poisons, and changes due to creature
+attacks that deal temporary ability score damage.
+
+At zero wound points, a character is disabled. At negative wound points, a
+character is dying until stabilized. When wound points reach a negative
+value the same size as its normal positive maximum, the character dies.
+
+%
+\subsection{Critical Hits}
+
+There are two types of critical hit: Hits that are within a weapon's threat
+range, and natural 20 critical hits. Neither of these requires
+``confirmation''.
+\begin{itemize}
+\item A natural 20 bypasses DR and goes straight to wounds. It is \textit{not}
+multiplied.
+\item A threat that was not a natural 20 goes to vitality and \textit{is}
+affected by DR, but does more damage (usually twice the damage). Dice are
+rolled twice and bonuses are applied twice.
+
+This combines additively, not multiplicatively, with other weapon effects
+that multiply damage (per the ``Lance'' example below).
+\end{itemize}
+Critical hits work on anything that could reasonably have vulnerable
+points, including corporeal undead.
+
+A natural 2 is a critical failure. The attack misses and something bad
+happens. The exact outcome is at the DM's discretion (typically dropping
+or throwing the weapon, tripping and falling prone, or granting nearby
+opponents an attack of opportunity).
+
+Using 2d10 instead of 1d20 alters critical threat ranges:
+\begin{itemize}
+\item Critical threat ranges in the SRD are widened by 1; for example, a
+threat range of ``19-20'' becomes ``18-20''.
+\item Anything that would double a critical threat range instead widens it
+by 1.
+\end{itemize}
+
+%
+\subsection{Nonlethal Damage}
+
+Nonlethal variants of some weapons and spells exist, per Sections
+\ref{sect-equip} and \ref{sect-magic}. These typically have a damage die one
+size smaller than the lethal variants.
+
+Lethal and nonlethal damage both affect vitality the same way; the difference
+between lethal and nonlethal damage is how they are applied to wound points.
+
+Once vitality points are exhausted, nonlethal damage to wounds is tracked as
+its own tally rather than applied to wound points. When nonlethal damage to
+wounds is equal to or greater than the \textit{current} number of wound
+points (maximum minus lethal damage), a character is unconscious. When
+nonlethal damage to wounds equals the \textit{maximum} number of wound
+points, any further nonlethal damage to wounds is lethal damage.
+
+%
+%
+\section{Other House Rules}
+
+%
+\subsection{Adamantine}
+
+In addition to being nearly invulnerable, adamantine has a supernatural
+ability to cut through almost any material.
+
+In mechanical terms, a slashing or piercing weapon made from adamantine
+treats all armour as having an armour rating of zero (no contribution to AC
+or to DR). The sole exception is force effect armour (from spells such as
+Mage Armour and Shield).
+
+Artificial armour that is in the way of an attack receives damage, taking
+half damage from slashing weapons and one point per die from piercing
+weapons. Armour that is the direct target of an attack (such as from a
+``sunder'' attack) takes full damage from slashing and half damage from
+piercing adamantine weapons.
+
+For attacking objects (including armour and weapons via a ``sunder'' attack),
+adamantine slashing and piercing weapons bypass hardness.
+
+Adamantine bludgeoning weapons could be built but do not confer a
+mechanical advantage to attacks.
+
+%
+\subsection{Fall Damage}
+
+Fall damage goes straight to wounds. Damage reduction from armour
+\textit{does} apply. ``Suddenly not flying'' is very dangerous even for
+high-level characters and for powerful creatures like dragons and wyverns.
+
+Special circumstances (such as landing in a hay cart, or in water, or on to
+deep snow) are adjudicated by the DM. This may reduce the effective distance
+fallen or provide DR or both at the DM's discretion.
+
+Fall damage is always rolled with d6 dice. The maximum number of damage
+dice, and the distance increment per die (rounded down), change with
+creature size. The practical upshot is that a squirrel and a dragon both
+handle a 20-foot fall better than a human would.
+
+\begin{tabular}{lcc} \hline
+\textbf{Size} & \textbf{Max Dice} & \textbf{Distance Per Die} \\ \hline
+Fine & 1 & 30' \\
+Diminutive & 2 & 20' \\
+Tiny & 5 & 10' \\
+\hline
+Small & 10 & 10' \\
+Medium & 20 & 10' \\
+Large & 30 & 10' \\
+\hline
+Huge & 40 & 20' \\
+Gargantuan & 60 & 40' \\
+Colossal & 80 & 80' \\
+\hline
+\end{tabular}
+
+NOTE - For 10 dice or more, the damage dealt will be very close to the
+average, and tallying dice will be quite cumbersome. Parties that
+encounter long falls can optionally use one of the following alternative
+approaches:
+\begin{itemize}
+\item Roll one die, and multiply by the die count. This gives highly
+variable damage, which might be the group's preference.
+\item Take the flat average (3.5 points per die). This has the opposite
+problem (no chance of getting lucky and surviving a long fall).
+\item Choose some smaller number of dice (such as 2 or 3), roll and multiply
+that, and then roll any remaining dice individually. This gives a bell
+curve but still allows variation. The downside is that it's complicated.
+\end{itemize}
+
+%
+\subsection{Flying Mounts}
+
+Flying mounts are usually at least one size larger than their passengers.
+
+A flying creature can carry up to 10\% of its weight in passengers or
+cargo without penalty. Carrying more than that requires constitution checks
+at regular intervals. The first check is DC~10; each subsequent check before
+the next long rest increases the DC by 1:
+
+\begin{tabular}{lll} \hline
+\textbf{Load} & \textbf{Interval} & \textbf{Recovery Time} \\ \hline
+up to 10\% & no check needed & n/a \\
+up to 20\% & every hour & 1 hour \\
+up to 50\% & every 10 minutes & 10 minutes \\
+up to 100\% & every round & 1 minute \\
+$>$ 100\% & cannot fly & n/a \\ \hline
+\end{tabular}
+
+After a failed check, the flying creature gains the ``fatigued'' condition
+and must descend until it lands. It is no longer able to maintain level
+flight or climb while carrying its load.
+
+The creature must rest for the indicated recovery time before attempting to
+fly again (even without load). If made airborne by any means before that
+time, it must descend and begin recovering again.
+
+After recovering, the creature can try picking up the load again and flying
+with it again, but the DC does not decrease until after the next long rest.
+Since the creature is still fatigued due to failing the first check, a
+subsequent failed check results in the creature gaining the ``exhausted''
+condition.
+
+An ``exhausted'' creature cannot take off or maintain level flight, and must
+descend and land per above if made airborne by any means.
+
+%
+\subsection{Grab Attack}
+
+Creatures that have the ``grab'' special ability with a bite attack can
+automatically apply damage on subsequent rounds if they succeed at grappling
+their target (mechanically the same as the ``constrict'' ability).
+
+If a creature has part of your body in its mouth, chewing on you is free.
+
+At the DM's discretion this may apply to other natural attacks, adjudicated
+on a case-by-case basis.
+
+%
+\subsection{Grappling}
+
+I am modifying how grappling between creatures of different sizes works:
+\begin{itemize}
+\item \textit{In addition} to the existing size bonuses to CMB and CMD, the
+larger creature gets a +5 bonus to CMB and CMD if there is a 1-step size
+difference, and a +10 bonus if the size difference is 2 steps or greater.
+\item A creature 3 or more size steps larger than another never gains the
+grappled condition from the smaller creature.
+\end{itemize}
+
+I am also adjusting the rules for grappling someone without being grappled
+in return:
+\begin{itemize}
+\item If a creature wants to grapple without being grappled in return, the
+attacker takes a -10 penalty to CMB for making the grapple, and the defender
+gets a +10 bonus to CMB when attempting to escape the grapple.
+\item If the defender is pinned, the penalty and bonus are 5 rather than 10.
+\item This supersedes the SRD's rules (which typically used a penalty of 20).
+\item If you creatures are grappling each other, the creature in control of
+the grapple can convert it to ``grapple without being grappled in return''
+by making a grappling check with the above penalty.
+\end{itemize}
+
+The practical effects are as follows:
+\begin{itemize}
+\item An adult can pick up and carry a child without being counted as
+grappled by the child.
+\item A flying creature can snatch and carry off a target without an absurdly
+high penalty (just a net -5 for a wyvern carrying off a human, for example).
+\item It is easier grapple and pin someone and then convert it to restraining
+them without being grappled than it is to go straight for the restraint.
+\item Mr. Welch can no longer ``abuse the grappling rules with mobs of
+trained squirrels'', since squirrels are too small to give a human the
+``grappled'' condition. Doing it with chihuahas would be difficult too, since
+they'd all be at a -10 penalty.
+\end{itemize}
+
+%
+\subsection{Lances}
+
+Per the SRD, a weapon such as a lance that deals double damage under certain
+conditions will roll twice as many dice \textit{and} add any relevant bonuses
+twice.
+
+This combines additively, not multiplicatively. For example, a critical hit
+with a lance during a mounted charge does 3 times the base damage, not 4
+times.
+
+%
+\subsection{Power Attack}
+
+Creatures with secondary attacks only get half the damage bonus from Power
+Attack on those secondary attacks. Primary attacks get the full bonus.
+
+%
+\subsection{Sonic Damage}
+
+Sonic damage treats all armour as having an armour rating of zero (no
+contribution to AC or DR).
+
+Spells that deal sonic damage are typically one level higher than similar
+spells that deal other types of damage.
+
+%
+\subsection{Start of Combat}
+
+Unless you're surprised, you aren't flat-footed at the start of combat.
+Under normal conditions, both sides have enough awareness of the situation
+to get full AC and to take a normal round's worth of actions.
+
+%
+% This is the end of the file.
