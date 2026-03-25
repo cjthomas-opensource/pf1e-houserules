@@ -14,6 +14,9 @@ DOCBITS=\
 	$(BASENAME)-feats.tex		\
 	$(BASENAME)-equip.tex		\
 	$(BASENAME)-combat.tex		\
+	$(BASENAME)-crafting.tex	\
+	$(BASENAME)-money.tex		\
+	$(BASENAME)-magic.tex		\
 	$(BASENAME)-spells.tex		\
 	$(GUIDENAME).tex		\
 	$(DMNAME).tex

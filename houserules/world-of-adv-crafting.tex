@@ -1,0 +1,145 @@
+% "World of Adventure" campaign guide - Crafting
+% Written by Christopher Thomas.
+
+\chapter{Crafting}
+\label{sect-crafting}
+
+%
+\section{Making Things}
+
+To craft an item, you make weekly Craft checks against the item's crafting
+DC until it's crafted:
+
+\begin{itemize}
+%
+\item Successful checks add
+\mbox{\bfseries 3 $\times$ check result $\times$ income multiplier sp}
+towards the value of the object being crafted.
+%
+\item ``Income multiplier'' is usually x1 for crafting purposes. At the DM's
+discretion, it might be x2 for jewellery and clockwork, x$\frac{1}{2}$ for
+things like making bricks, and so forth.
+%
+\item Successful checks also consume
+\mbox{\bfseries 1.5 $\times$ check result $\times$ income multiplier sp}
+in materials and other supplies, but it's easier just to say ``producing an
+item costs half its price in materials'' and deduct that as a lump sum.
+%
+\item Checks that fail by 5 or less make no progress but consume no
+additional cost; you wasted time but avoided wasting materials or money.
+%
+\item Checks that fail by 6-10 lose
+\mbox{\bfseries 1 $\times$ craft DC $\times$ income multiplier sp}
+worth of materials or supplies. Checks that fail by more than 10 lose twice
+this amount.
+%
+\end{itemize}
+
+The net result of this is that if you're cranking out items as fast as you
+can make them, always pass your skill checks, and always have a buyer,
+you'll make about 1.5x as much money as you would if making income rolls.
+If you meet the target DC with a die roll of 9 or more, you'll succeed
+about two thirds of the time, very rarely waste materials, and average out
+to about the amount predicted by income rolls. The income rolls abstract
+the ``occasionally flub rolls'' and ``have to find buyers'' parts of the
+crafting process.
+
+%
+\subsection{Making Things for Yourself}
+
+Making items for yourself might save time and money, or might cost time
+and money. You don't have to wait for a specialist to become available, but
+how well it works depends on the crafting DC:
+
+\begin{itemize}
+\item If a die roll of 5 meets the target DC, you'll proceed at
+\textbf{90\% speed} on average.
+\item If a die roll of 7 meets the target DC, you'll proceed at
+\textbf{80\% speed} on average.
+\item If a die roll of 9 meets the target DC, you'll proceed at
+\textbf{two thirds speed} on average and usually won't waste material.
+This is the break-even point for making vs. buying.
+\item If you need a die roll higher than 9 to meet the target DC, you'll
+be spending more time and money than if you'd just commissioned a vendor to
+make the item.
+\end{itemize}
+
+It can absolutely still be worth making an item for personal reasons even
+if it takes more time and money than buying one.
+
+%
+\subsection{Making Magic Items}
+
+A permanent magic item's physical vessel is a masterwork object. This is
+made using an appropriate Craft skill (such as jewellery smithing or
+armour smithing), and making the object progresses as described above.
+
+To create an item suitable for enchantment, the person crafting the object
+must have a number of ranks in Spellcraft equal to the number of
+``enchantability'' masterworking improvements.
+
+For any type of magic item (expendable or permanent), \textit{after} any
+needed physical vessel is crafted, the enchantment is applied by making
+crafting checks using the Spellcraft skill:
+
+\begin{itemize}
+\item Successful checks add \mbox{\bfseries 20 $\times$ check result sp}
+per week. There is no ``income multiplier'' (it's already included).
+\item DC is typically \mbox{\bfseries 15 + spell level} for scrolls,
+potions, and similar one-shot items, and \mbox{\bfseries 20 + spell level}
+or \mbox{\bfseries 20 + bonus} for other items.
+\end{itemize}
+
+This progresses much more quickly than most other forms of crafting. This
+is because most of the time spent by a professional wizard isn't spent
+crafting items - it's spent finding customers willing to commission items.
+
+\fixme{This is no longer true for the ``magic is even cheaper'' scenario.
+Consider a sliding scale of 6x for low cost to 20x for high cost.}
+
+Magic item costs are described in detail in Section \ref{sect-magic}.
+%
+
+%
+\section{Crafting DCs}
+
+For most items, crafting DC goes up as the logarithm of the item's base
+price (before masterworking):
+
+\begin{tabular}{lc}\hline
+\textbf{Base Price} & \textbf{Craft DC} \\ \hline
+up to 1 sp & 11 \\
+up to 3 sp & 13 \\
+up to 10 sp & 15 \\
+up to 30 sp & 17 \\
+up to 100 sp & 19 \\
+up to 300 sp & 21 \\
+up to 1000 sp & 23 \\
+\multicolumn{2}{c}{\ldots} \\ \hline
+\end{tabular}
+
+Exact crafting DCs are subject to DM discretion.
+
+The difficulty classes that various types of people and organizations can
+hit are roughly as follows:
+
+\begin{itemize}
+\item A decent L1 novice can hit DC~15 reliably, DC~20 sometimes, and DC~25
+by fluke.
+\item A decent late-career professional can hit DC~25 reliably, DC~30
+sometimes, and DC~35 by fluke.
+\item The very best solo practitioners (maybe with one helper) can hit DC~35
+reliably, DC~40 sometimes, and DC~45 by fluke.
+\item The very best organizations can hit DC~45 reliably, DC~50 sometimes,
+and DC~55 by fluke.
+\end{itemize}
+
+Having people help you is described in Section \ref{sect-money}. A group
+of helpers, in addition to contributing to crafting \textit{progress}, also
+gives a bonus to the leader's crafting roll. The end result is that an
+organization run by decent late-career professionals can match the DCs of
+the best solo practitioners, while making crafting progress much more
+rapidly (at the cost of organizational overhead).
+
+%
+% This is the end of the file.
